@@ -1,0 +1,172 @@
+{% extends "layout/base_all.html" %}
+{% load static %}
+
+{% block content %}
+<section class="page">
+		<!-- ***** Page Top Start ***** -->
+		<div class="cover" data-image="{% static 'sixg/images/photos/parallax.jpg' %}">
+			<div class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Наши услуги</h1>
+						</div>
+						<div class="col-lg-12 text-center">
+							<ol class="breadcrumb">
+								<li><a href="{% url 'sixg:index' %}">Главная</a></li>
+								<li class="active">Наши услуги</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Top End ***** -->
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom pbottom-70">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/1.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Создание сайтов</h3>
+								<div class="text">
+									В разработке
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/2.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Разработка приложений</h3>
+								<div class="text">
+									В разработке.
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/3.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Написание технического задания</h3>
+								<div class="text">
+									В разработке.
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/4.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Создание не типичных проектов.</h3>
+								<div class="text">
+									В разработке.
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/5.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Использование современных подходов и технологий</h3>
+								<div class="text">
+									в разработке
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="services-single.html" class="services-post">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/services/6.jpg' %}" alt="">
+							</div>
+							<div class="post-content">
+								<div class="icon">
+									<i class="fa fa-chevron-right"></i>
+								</div>
+								<h3>Создание minicrm под нужды бизнеса</h3>
+								<div class="text">
+									в разработке
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+	</section>
+
+
+	<!-- ***** Parallax Start ***** -->
+	<section class="parallax">
+		<div class="parallax-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="info">
+							<p>Мы разрабатываем и создаем дизайн <span>ваших проектов</span> которые помогут вам вести бизнес.</p>
+							<a class="btn-white-line" href="{% url 'sixg:contact' %}">Свяжитесь с нами</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Parallax End ***** -->
+
+
+	<section class="page">
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom mtop-100 pbottom-40">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="about mobile-margin-bottom-100">
+							<div class="about-image">
+								<img src="{% static 'sixg/images/photos/about/2.jpg' %}" alt="">
+							</div>
+							<div class="about-text">
+								<h2>Создаем веб сервисы от начала и до конца</h2>
+								<p>в разработке</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+	</section>
+{% endblock %}

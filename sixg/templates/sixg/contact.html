@@ -1,0 +1,120 @@
+{% extends "layout/base_all.html" %}
+{% load static %}
+
+{% block content %}
+
+
+	<section class="page">
+		<!-- ***** Page Top Start ***** -->
+		<div class="cover" data-image="{% static 'sixg/images/photos/parallax.jpg' %}">
+			<div class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Свяжитесь с нами</h1>
+						</div>
+						<div class="col-lg-12 text-center">
+							<ol class="breadcrumb">
+								<li><a href="{% url 'sixg:index' %}">Главная</a></li>
+								<li class="active">Свяжитесь с нами</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Top End ***** -->
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="map-wrapper">
+							<!-- ***** Google Maps Start ***** -->
+							<div class="map-canvas" data-zoom="12" data-lat="-37.811085" data-lng="144.955631" data-type="roadmap"
+								data-hue="#ffc400" data-title="Lintor" data-icon-path="{% static 'sixg/images/marker.png' %}"
+								data-content="455 West Orchard Street<br>Kings Mountain, NC 28086<br><br><a href='mailto:support@yourbrand.com'>support@yourbrand.com</a>">
+							</div>
+							<!-- ***** Google Maps End ***** -->
+						
+							<!-- ***** Contact Informations Start ***** -->
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="contact-info">
+											<div class="row">
+												<div class="col-lg-4 col-md-4 col-sm-12">
+													<div class="item">
+														<i class="fa fa-location-arrow"></i>
+														<div class="txt">
+															<span>г.Чебоксары Чувашская республика<br>Пр.Ленина д.34 кв.8 428000</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-4 col-md-4 col-sm-12">
+													<div class="item">
+														<i class="fa fa-phone"></i>
+														<div class="txt">
+															<span>8(917)6767659</span>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-4 col-md-4 col-sm-12">
+													<div class="item">
+														<i class="fa fa-envelope"></i>
+														<div class="txt">
+															<span>
+																<a href="mailto:info@sixg.ru">info@sixg.ru</a>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- ***** Contact Informations End ***** -->
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- ***** Contact Text Start ***** -->
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<h5>Получите наш ответ</h5>
+						<div class="contact-text">
+							<p></p>
+							<p>Свяжитесь с нами и получите ответы на все интересующие вас вопросы</p>
+						</div>
+					</div>
+					<!-- ***** Contact Text End ***** -->
+
+					<!-- ***** Contact Form Start ***** -->
+					<div class="col-lg-8 col-md-6 col-sm-12">
+						<div class="contact-form">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<input type="text" placeholder="Имя">
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<input type="text" placeholder="E-Mail">
+								</div>
+								<div class="col-lg-12">
+									<textarea placeholder="Ваше сообщение"></textarea>
+								</div>
+								<div class="col-lg-12">
+									<button class="btn-secondary-block pull-right">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ***** Contact Form End ***** -->
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+	</section>
+
+{% endblock %}

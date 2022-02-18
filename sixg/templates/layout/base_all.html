@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>6g - создание сайтов и приложений</title>
+	<meta name="description" content="sixg.ru - создание сайтов и приложений." />
+	<meta name="keywords" content="sixg.ru - создание сайтов и приложений, mobile app, agency, development, html, template, tempload" />
+	<meta name="author" content="tempload"/>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="{% static 'sixg/images/favicon.png' %}" />
+
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="{% static 'sixg/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'sixg/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'sixg/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="{% static 'sixg/css/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<!-- ***** Preloader Start ***** -->
+	<div class="loader-wrapper">
+		<div class="loader">
+			<div class="diamond"></div>
+			<div class="diamond"></div>
+			<div class="diamond"></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+	<!-- ***** Header Area Start ***** -->
+	<header class="header-area header-white header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="main-nav">
+						<!-- ***** Logo Start ***** -->
+						<a href="{% url 'sixg:index' %}" class="logo">
+							<p class="light-logo" alt="sixg" ><strong><span style="font-size:36px" p><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#33ccff">6</span><span style="color:#e74c3c" >G</span></span></span></strong></p>
+                            <p class="dark-logo" alt="sixg" style="vertical-align: top"><strong><span style="font-size:36px" ><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#33ccff">6</span><span style="color:#e74c3c" >G</span></span></span></strong></p>
+						</a>
+						<!-- ***** Logo End ***** -->
+
+						<!-- ***** Menu Start ***** -->
+					<ul class="nav">
+								<li><a href="{% url 'sixg:index' %}">Главная</a></li>
+							<li class="submenu">
+								<a href="javascript:;">Наши работы</a>
+								<ul>
+									<li><a href="{% url 'sixg:our-work' %}">Список проектов</a></li>
+									<li><a href="#">в разработке</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="javascript:;">Дополнительно</a>
+								<ul>
+									<li><a href="{% url 'sixg:about-us' %}">О нас</a></li>
+									<li><a href="{% url 'sixg:services' %}">Услуги</a></li>
+									<li><a href="#">в разработке</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="javascript:;">Блог</a>
+								<ul>
+									<li><a href="#">в разработке</a></li>
+									<li><a href="#">в разработке</a></li>
+								</ul>
+							</li>
+							<li><a href="{% url 'sixg:contact' %}">Контакты</a></li>
+						</ul>
+						<a class="menu-trigger">
+							<span>Menu</span>
+						</a>
+						<!-- ***** Menu End ***** -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** Header Area End ***** -->
+<!-- ***** индивидуальный блок для каждой страницы ***** -->
+                {% block content %}
+
+                {% endblock %}
+<!-- ***** Конец индивидуальный блок для каждой страницы ***** -->
+
+
+	<!-- ***** Footer Start ***** -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12">
+					<img src="{% static 'sixg/images/blue-logo-white.sv' %}" class="logo" alt="">
+					<div class="text">Мы молодая компания начинающих разработчиков, трудимся на благо клиентов, и готовы браться за проекты любой сложности.</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5>Дополнительно</h5>
+					<ul class="footer-nav">
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>Наши работы</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>О нас</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>Услуги</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>Блог</span></a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i><span>Контакты</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+					<h5>Последние проекты</h5>
+					<ul class="footer-nav">
+						<li><a href="tokenote.ru"><i class="fa fa-angle-right"></i><span>Сайт криптовалют</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h5>Контакты</h5>
+					<div class="address">
+						<p>Пр.Ленина д.34<br>Чебоксары, Чувашская Республика</p>
+						<p>Телефон: +7(917)676-76-59</p>
+						<p><span>E-Mail:</span><a href="#">sales@sixg.ru</a></p>
+						<ul class="social">
+							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright">© 2022 Sixg. Студия по разработке сайтов и приложений.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ***** Footer Start ***** -->
+
+
+
+<!-- jQuery -->
+	<script src="{% static 'sixg/js/jquery-2.1.0.min.js' %}"></script>
+
+	<!-- Bootstrap -->
+	<script src="{% static 'sixg/js/popper.js' %}"></script>
+	<script src="{% static 'sixg/js/bootstrap.min.js' %}"></script>
+
+	<!-- Plugins -->
+	<script src="{% static 'sixg/js/scrollreveal.min.js' %}"></script>
+	<script src="{% static 'sixg/js/parallax.min.js' %}"></script>
+	<script src="{% static 'sixg/js/waypoints.min.js' %}"></script>
+	<script src="{% static 'sixg/js/jquery.counterup.min.js' %}"></script>
+	<script src="{% static 'sixg/js/imgfix.min.js' %}"></script>
+	<script src="{% static 'sixg/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'sixg/js/jquery.magnific-popup.min.js' %}"></script>
+
+	<!-- Global Init -->
+	<script src="{% static 'sixg/js/custom.js' %}"></script>
+</body>
+</html>

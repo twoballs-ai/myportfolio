@@ -1,0 +1,189 @@
+{% extends "layout/base_all.html" %}
+{% load static %}
+
+{% block content %}
+
+	<section class="page">
+		<!-- ***** Page Top Start ***** -->
+		<div class="cover" data-image="assets/images/photos/parallax.jpg">
+			<div class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>О нас</h1>
+						</div>
+						<div class="col-lg-12 text-center">
+							<ol class="breadcrumb">
+								<li><a href="{% url 'sixg:index' %}">Главная</a></li>
+								<li class="active">О нас</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Top End ***** -->
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom pbottom-80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="about-content">
+							<div class="col-lg-12">
+								<div class="about">
+									<div class="about-image">
+										<img src="{% static 'sixg/images/photos/about/1.jpg' %}" alt="">
+									</div>
+									<div class="about-text">
+										<h2>Мы ответсвенные разработчики</h2>
+										<p>Мы тщательно планируем все этапы ведения вашего проекта.</p>
+										<p>Мы практикуем креативный подход к проектам.</p>
+									</div>
+								</div>
+								<div class="about left mbottom-20">
+									<div class="about-image">
+										<img src="{% static 'sixg/images/photos/about/2.jpg' %}" alt="">
+									</div>
+									<div class="about-text">
+										<h2>Выполним проект в согласованные сроки</h2>
+										<p>Мы обсуждаем с вами техническое задание и даем реальные сроки выполнения которые должны устроить и вас и нас</p>
+										<p>Всегда готовы добавить новый функционал.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+	</section>
+
+	<!-- ***** Parallax Start ***** -->
+	<section class="parallax">
+		<div class="parallax-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="info">
+							<p>Мы разрабатываем и создаем дизайн <span>ваших проектов</span> которые помогут вам вести бизнес.</p>
+							<a class="btn-white-line" href="{% url 'sixg:contact' %}">Свяжитесь с нами</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Parallax End ***** -->
+
+	<!-- ***** Our Team Start ***** -->
+	<section class="section pbottom-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="center-heading">
+						<h2 class="section-title">Наша команда</h2>
+					</div>
+				</div>
+				<div class="offset-lg-3 col-lg-6">
+					<div class="center-text">
+						<p>В разработке</p>
+					</div>					
+				</div>
+			</div>
+			{% comment %}<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="team-item">
+						<div class="header">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/team/1.jpg' %}" alt="">
+							</div>
+							<div class="info">
+								<strong>Fletch Skinner</strong>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<span>Product Strategist</span>
+						<div class="body">
+							Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="team-item active">
+						<div class="header">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/team/2.jpg' %}" alt="">
+							</div>
+							<div class="info">
+								<strong>Lance Bogrol</strong>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<span>Visual Designer</span>
+						<div class="body">
+							Pellentesque lectus ante, dictum tempor dui quis, sceler semper erat aenean.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="team-item">
+						<div class="header">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/team/3.jpg' %}" alt="">
+							</div>
+							<div class="info">
+								<strong>Valent Morose</strong>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<span>Android Developer</span>
+						<div class="body">
+							Morbi ornare sapien a nulla condimentum porta. Praesent finibus, sapien.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="team-item">
+						<div class="header">
+							<div class="img">
+								<img src="{% static 'sixg/images/photos/team/4.jpg' %}" alt="">
+							</div>
+							<div class="info">
+								<strong>Giles Posture</strong>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-github"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<span>iOS Developer</span>
+						<div class="body">
+							Nam pharetra suscipit lorem, vitae efficitur dolor dapibus in. Integer maximus.
+						</div>
+					</div>
+				</div>
+			</div>{% endcomment %}
+		</div>
+	</section>
+	<!-- ***** Our Team End ***** -->
+
+{% endblock %}
