@@ -1,6 +1,8 @@
 from django.urls import path, include
 from .views import index, services
 from .views import *
+from . import views
+from django.contrib import admin
 
 app_name = "sixg"
 
@@ -12,6 +14,6 @@ urlpatterns = [
     path('services/', services, name='services'),
     path('services-single/', services_single, name='services-single'),
     path('blog/', blog, name='blog'),
-    path('contact/', contact, name='contact'),
+    path('contact/', views.contact, name='contact'),
 
 ]
