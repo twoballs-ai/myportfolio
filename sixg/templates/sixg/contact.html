@@ -102,7 +102,9 @@
                                     <form method="post">
                                         {% csrf_token %}
                                         {{ form.as_p }}
-                                        <button type="submit">Отправить</button>
+                                        <div class="col-lg-12">
+									<button type="submit"class="btn-secondary-block pull-right">Отправить</button>
+								</div>
                                     </form>
 							</div>
 						</div>
